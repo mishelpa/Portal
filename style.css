@@ -1,0 +1,663 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100vh;
+  font-size: 16px;
+}
+
+/* Agregando tipos de fuentes */ 
+
+@font-face{
+  font-family: Dobra-Bold;
+  src: url(./fonts/Dobra-Bold.otf);
+}
+
+@font-face{
+  font-family: Dobra-Book;
+  src: url(./fonts/Dobra-Book.otf);
+}
+
+@font-face{
+  font-family: Tempelhof-Heavy;
+  src: url(./fonts/Tempelhof-Heavy.otf);
+}
+
+@font-face{
+  font-family: Tempelhof-Medium;
+  src: url(./fonts/Tempelhof-Medium.otf);
+}
+
+@font-face{
+  font-family: Tempelhof-Regular;
+  src: url(./fonts/Tempelhof-Regular.otf);
+}
+
+
+/* Web Responsive */
+
+@media (max-width: 420px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 640px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 920px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1399px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+body{
+  height: 100%;
+}
+
+header{
+  width: 100%;
+  height: 7em;
+}
+
+.container {
+  width: 100%;
+  height: 7em;
+  margin: auto;
+}
+
+.logo{
+  width: 9.306em;
+  height: 2.768em;
+  float:left;
+  margin-left: 5em;
+  margin-top: 2em;
+}
+
+.logo p{
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  width: 80%;
+  height: 7em;
+  float: left;
+  text-align: right;
+  align-items: center;
+}
+
+nav ul{
+  width: 100%;
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav ul li a{
+  color: #0061A2;
+  font-size: 0.75em;
+  font-family: Dobra-Book;
+  text-decoration: none;
+  padding-left: 2%;
+}
+
+nav ul li a:hover{
+  color: lightblue;
+}
+
+.toggle{
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  display: none;
+}
+
+
+.portada .header{
+  display: flex;
+}
+
+.portada .box{
+  width:  6.1765rem;
+  height: 6.121rem;
+  border: solid 2pt white;
+  margin-left: 21.9375em;
+  margin-top: 5.4435em
+}
+
+@media (max-width: 767px) {
+  
+  .toggle{
+    display: block;
+    padding: .2rem;
+    margin-top: -9rem;
+    color: #0061A2;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .act-toggle{
+    height: 18rem;
+  }
+
+  .pad-toggle{
+    margin-top: -2.5rem;
+  }
+
+  .toggle span {
+    padding: 0.1em;
+    font-size: 2em;
+    border: #0061A2 1.5pt solid;
+  }
+
+  header{
+    display: flex;
+    height: 8rem;
+  }
+
+  .container{
+    height: 18rem;
+  }
+
+  nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav ul{
+    display: none;
+  }
+
+  .active{
+    display: block !important;
+  }
+
+  nav ul li{
+    display: block;
+    text-align: center;
+    padding: .4rem;
+    font-size: 1em;
+  }
+
+  .portada .box {
+    margin-left: 10.9375em !important;
+  }
+}
+
+
+.portada h3{
+  color: white;
+  padding-left: 1.98rem;
+  margin-top: 6.064rem;
+  letter-spacing: .24rem;
+  font-size: 1.2em;
+  font-family: Dobra-Book;
+}
+
+.bg-unidad-central{
+  background-image: url(./images/unidad-central.png);
+}
+
+.bg-habilitacion{
+  background-image: url(./images/habilitacion.png);
+}
+
+.bg-hoteles{
+  background-image: url(./images/hoteles.png);
+}
+
+.bg-departamentos{
+  background-image: url(./images/departamentos.png);
+}
+
+.bg-estacionamiento{
+  background-image: url(./images/estacionamiento.png);
+}
+
+.bg-unidad-central, .bg-habilitacion, .bg-hoteles,
+.bg-departamentos, .bg-estacionamiento{
+  height: 45rem;
+  width: 100%;
+  background-size: 100% 45rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.portada .body{
+  display: flex;
+  justify-content: center;
+  margin-top: 12.533rem;
+}
+
+.portada .body p{
+  font-size: 7em;
+  letter-spacing: 0.2rem;
+  width: 40%;
+  font-family: Dobra-Bold;
+  line-height: 6rem;
+  margin-left: 0.2rem;
+}
+
+@media (max-width: 640px) {
+  .portada .body p{
+    font-size: 3.5em;
+  }
+}
+
+
+.title-results{
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title-results :nth-child(1){
+  font-family: Dobra-Book;
+  letter-spacing: 0.28em;
+  font-size: 1.2em;
+  line-height: 2rem;
+}
+
+.title-results :nth-child(2){
+  font-family: Tempelhof-Medium;
+  font-size: 1em;
+}
+
+.grids-results{
+  display: flex;
+  justify-content: center;
+}
+
+.row-container1, .row-container2{
+  width: 66.13%;
+}
+
+.grid-container1{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 11.75rem);
+  grid-gap: .2rem;
+  padding-bottom: 2.5rem;
+}
+
+.grid-container2{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 11.85rem);
+  grid-gap: .2rem;
+  padding-bottom: 2.5rem;
+}
+
+.grid-item{
+  background: #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+.grid-container1 .description{
+  color: white;
+  grid-column: 1/3;
+  font-family: Tempelhof-Medium;
+  font-size: 1.3em;
+}
+
+.grid-container1 .description p{
+  margin: 2.35rem 3.15rem;
+}
+
+.grid-container2 .description p{
+  margin: 1.7rem 2.6515rem;
+}
+
+.item-main div {
+  margin: 2.0125rem 0.42rem;
+}
+
+.item-main div :nth-child(1) {
+  font-family: Dobra-Book;
+  letter-spacing: 0.38em;
+  width: 100%;
+  text-align: start;
+  font-size: 1.2em;
+  margin-bottom: 1.2rem;
+}
+
+.item-main div :nth-child(2) {
+  font-family: Tempelhof-Medium;
+  font-size: 0.9em;
+  line-height: 1rem;
+}
+.grid-container1 .item-main{
+  grid-column: 2/4;
+  background-color: #ffff
+}
+
+.grid-container1 .info{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 15.85rem;
+}
+
+.grid-container1 .info p{
+  margin: 5.4rem 3.7rem;
+}
+
+.grid-container2 .item10 p {
+  margin: 3.4rem 3.8735rem;
+}
+
+.grid-container2 .item11 div{
+  margin: 3.4rem 2.3rem;
+}
+
+.text-pink{
+  color: #FF00FF;
+}
+
+.grid-container2 .info {
+  height: 15.5rem;
+}
+
+.cuadro{
+  height: 15.65rem !important;
+}
+
+.grid-container1 .t-activos, .grid-container1 .r-fin{ 
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container1 .p-neto, .grid-container1 .solvencia{
+  display: flex;
+  grid-column: 3/5;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .grid-container1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 11.75rem);
+    grid-gap: .2rem;
+  }
+
+  .grid-container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 11.75rem);
+    grid-gap: .2rem;
+  }
+  .grid-container1 .description,
+  .grid-container1 .unit-central,
+  .grid-container1 .item-main,
+  .grid-container1 .t-activos, .grid-container1 .r-fin,
+  .grid-container1 .p-neto, .grid-container1 .solvencia
+  {
+    grid-column: 1/3;
+  }
+
+}
+
+
+.grid-container1 .stats span:nth-child(1),
+.grid-container2 .stats span:nth-child(1) {
+  font-size: 3.6em;
+  font-family: Tempelhof-Heavy;
+}
+
+.grid-container1 .stats span:nth-child(2),
+.grid-container2 .stats span:nth-child(2)
+ {
+  font-size: 1em;
+  text-align: center;
+  font-family: Tempelhof-Medium;
+}
+ 
+
+/* SECCIÓN UNIDAD CENTRAL */
+
+
+.des-unidad{
+  background: #003DA6 !important;
+}
+
+.port-unidad-central, .title-unidad, .item-unit-central :nth-child(2) {
+  color: #003DA6;
+}
+
+.results-unidad-central .stats, .item-unit-central :nth-child(1) {
+  color: #2559B2
+}
+
+/* SECCIÓN HABILITACIÓN  */
+.port-habilitacion .bg-habilitacion{
+  color: #FFFF
+}
+
+.title-habilitacion, .item-habilitacion, .results-habilitacion .info{
+  color: #00A11D
+}
+
+.des-habilitacion{
+  background: #16A11D !important;
+}
+
+.results-habilitacion .stats{
+  color: #25AE3E;
+}
+
+/* SECCIÓN DEPARTAMENTOS */
+
+.bg-departamentos, .title-departamentos, .item-departamentos, .results-departamentos .info{
+  color: #244465;
+}
+
+.port-departamentos .box {
+  border-color: #244465 !important;
+}
+
+.port-departamentos h3{
+  color: #244465 !important;
+}
+
+.grid-container2 .description {
+  background: #244465 !important;
+  color: white;
+  grid-column: 1/3;
+  font-size: 1.3em;
+}
+
+.grid-container2 .item-main{
+  background: none;
+}
+
+.results-departamentos .stats{
+  color:#445F7B;
+}
+
+/* SECCIÓN ESTACIONAMIENTOS */
+
+.bg-estacionamiento .body, .title-estacionamiento, .item-estacionamiento{
+  color: #284FAB
+}
+
+.des-estacionamiento{
+  background: #003DA6;
+}
+
+.results-estacionamiento .stats{
+  color: #2559B2;
+}
+
+/* SECCIÓN HOTELES */
+
+.bg-hoteles .body{
+  color: #906D29;
+}
+
+.title-hoteles, .results-hoteles .stats, .item-hoteles{
+  color: #926B27;
+}
+
+.des-hoteles{
+  background: #926B27;
+}
+
+.results-hoteles .info{
+  color: #946B27;
+}
+
+.grid-container2 .item2,
+.grid-container2 .item5 {
+  grid-column: 3/5;
+}
+
+.grid-container2 .item3,
+.grid-container2 .item6{
+  grid-column: 5/7;
+}
+
+.grid-container2 .item4{
+  grid-column: 1/3;
+}
+
+.grid-container2 .item-departamentos{
+  grid-column: 2/6;
+}
+
+.grid-container2 .item8,
+.grid-container2 .item9{
+  grid-row: 4/6;
+}
+
+.grid-container2 .item10,
+.grid-container2 .item11{
+  grid-row: 6/8;
+}
+
+.grid-container2 .item8,
+.grid-container2 .item10{
+  grid-column: 1/4;
+}
+
+.grid-container2 .item9,
+.grid-container2 .item11{
+  grid-column: 4/7;
+}
+
+@media (max-width: 640px) {
+
+.grid-container2 .description,
+.grid-container2 .item3,
+.grid-container2 .item5
+ {
+    grid-column: 1/2;
+  }
+
+.grid-container2 .item2,
+.grid-container2 .item4,
+.grid-container2 .item6
+ {
+  grid-column: 2/3;
+}
+
+.grid-container2 .departamento,
+.grid-container2 .item-main,
+.grid-container2 .item8,
+.grid-container2 .item9,
+.grid-container2 .item10,
+.grid-container2 .item11
+{
+  grid-column: 1/3;
+}
+
+.grid-container2 .item8
+{
+  grid-row: 5/6;
+}
+
+.grid-container2 .item9{
+  grid-row: 6/7;
+}
+.grid-container2 .item10{
+  grid-row: 7/8;
+}
+
+.grid-container2 .item11{
+  grid-row: 8/9;
+}
+}
+
+.p-geo {
+  grid-column: 1/3;
+  grid-row: 4/7;
+}
+
+.info {
+  grid-column: 3/5;
+  font-family: Tempelhof-Regular;
+  font-size: 2.5em;
+}
+
+.city{
+  font-size: 1.5rem !important;
+}
+
+@media (max-width: 640px) {
+  .info {
+    grid-column: 1/3;
+  }
+  .p-geo {
+    grid-row: 6/7;
+  }
+}
+
+img{
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.cuadro img{
+  max-width: 100%;
+  width: 90%;
+  height: 90%;
+}
+
+
