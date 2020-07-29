@@ -351,6 +351,7 @@ nav ul li a:hover{
   grid-column: 1/3;
   font-family: Tempelhof-Medium;
   font-size: 1.3em;
+  text-align: justify;
 }
 
 .grid-container1 .description p{
@@ -363,6 +364,7 @@ nav ul li a:hover{
 
 .item-main div {
   margin: 2.0125rem 0.42rem;
+  text-align: justify;
 }
 
 .item-main div :nth-child(1) {
@@ -521,6 +523,7 @@ nav ul li a:hover{
   color: white;
   grid-column: 1/3;
   font-size: 1.3em;
+  text-align: justify;
 }
 
 .grid-container2 .item-main{
