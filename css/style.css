@@ -1,0 +1,634 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100vh;
+  font-size: 16px;
+}
+
+/* Agregando tipos de fuentes */ 
+
+@font-face{
+  font-family: Dobra-Bold;
+  src: url(../fonts/Dobra-Bold.otf);
+}
+
+@font-face{
+  font-family: Dobra-Book;
+  src: url(../fonts/Dobra-Book.otf);
+}
+
+@font-face{
+  font-family: Dobra-Light;
+  src: url(../fonts/Dobra-Light.otf);
+}
+
+@font-face{
+  font-family: Tempelhof-Heavy;
+  src: url(../fonts/Tempelhof-Heavy.otf);
+}
+
+@font-face{
+  font-family: Tempelhof-Medium;
+  src: url(../fonts/Tempelhof-Medium.otf);
+}
+
+@font-face{
+  font-family: Tempelhof-Regular;
+  src: url(../fonts/Tempelhof-Regular.otf);
+}
+
+
+/* Web Responsive */
+
+@media (max-width: 420px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 640px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 920px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1399px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media (max-width: 640px) {
+  .portada .body p, .box1 p, .box2 p{
+    font-size: 3.5em;
+  }
+}
+
+body{
+  height: 100%;
+}
+
+header{
+  width: 100%;
+  height: 7em;
+}
+
+.container {
+  width: 100%;
+  height: 7em;
+  margin: auto;
+}
+
+.logo{
+  width: 9.306em;
+  height: 2.768em;
+  float:left;
+  margin-left: 5em;
+  margin-top: 2em;
+}
+
+.logo p{
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  width: 80%;
+  height: 7em;
+  float: left;
+  text-align: right;
+  align-items: center;
+}
+
+nav ul{
+  width: 100%;
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav ul li a{
+  color: blue;
+  font-size: 0.75em;
+  font-family: Dobra-Book;
+  text-decoration: none;
+  padding-left: 2%;
+}
+
+nav ul li a:hover{
+  color: lightblue;
+}
+
+.toggle{
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  display: none;
+}
+
+
+.portada .header{
+  display: flex;
+}
+
+.portada .box1, .portada .box2, .portada .box3{
+  width:  29.2rem;
+  height: 16.4615rem;
+  background:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada .box1{
+  margin-left: 48.85em;
+  border-bottom-left-radius: 1em;
+}
+
+.portada .box2{
+  margin-left: 12.5em;
+  border-top-right-radius: 1em;
+}
+
+.portada .box3{
+  margin-left: 12.5em;
+  height: 19.9615em !important;
+  border-top-right-radius: 1em;
+}
+
+@media (max-width: 767px){
+  .portada .box1{
+    margin-left: 24.42em !important;
+  }
+  .portada .box2, .portada .box3{
+    margin-left: 6.25em;
+  }
+}
+
+.portada .box1 p, .portada .box2 p, .portada .box3 p{
+  font-size: 2.1em;
+  line-height: 1.2em;
+  font-family: Dobra-Bold;
+  color: #FFB600;
+  width: 80%;
+  text-align: justify;
+}
+
+.bg-capacidad, .bg-corporativo{
+  display: flex;
+  align-items: flex-end;
+}
+
+.bg-inspirar, .bg-gestion{
+  display: flex;
+  align-items: flex-start !important;
+}
+
+
+
+@media (max-width: 767px) {
+  
+  .toggle{
+    display: block;
+    padding: .2rem;
+    margin-top: -9rem;
+    color: #0061A2;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .act-toggle{
+    height: 18rem;
+  }
+
+  .pad-toggle{
+    margin-top: -2.5rem;
+  }
+
+  .toggle span {
+    padding: 0.1em;
+    font-size: 2em;
+    border: #0061A2 1.5pt solid;
+  }
+
+  header{
+    display: flex;
+    height: 8rem;
+  }
+
+  .container{
+    height: 18rem;
+  }
+
+  nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav ul{
+    display: none;
+  }
+
+  .active{
+    display: block !important;
+  }
+
+  nav ul li{
+    display: block;
+    text-align: center;
+    padding: .4rem;
+    font-size: 1em;
+  }
+
+  .portada .box {
+    margin-left: 10.9375em !important;
+  }
+}
+
+.portada .body{
+  display: flex;
+  justify-content: center;
+  margin-top: 8.533rem;
+}
+
+.portada .body p{
+  font-size: 7em;
+  letter-spacing: 0.3rem;
+  width: 40%;
+  font-family: Dobra-Bold;
+  line-height: 6rem;
+  margin-left: 0.2rem;
+}
+
+@media (max-width: 640px) {
+  .portada .body p{
+    font-size: 3.5em;
+  }
+}
+
+
+.title-results{
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #003DA6;
+}
+
+.title-results :nth-child(1){
+  font-family: Dobra-Book;
+  letter-spacing: 0.28em;
+  font-size: 1.2em;
+  line-height: 2rem;
+}
+
+.title-results :nth-child(2){
+  font-family: Tempelhof-Medium;
+  font-size: 1em;
+}
+
+.grids-results{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6em;
+}
+
+.row-container1{
+  width: 66.13%;
+}
+
+
+.grid-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.grid-container1 .description p{
+  margin: 2.35rem 3.15rem;
+}
+
+
+
+.item-main div {
+  width: 42em;
+}
+
+.item-main div p {
+  font-family: Tempelhof-Medium;
+  color: #003DA6;
+  font-size: 1em;
+  line-height: 1.2rem;
+  text-align: justify;
+}
+.grid-container1 .item-main{
+  grid-column: 2/4;
+  background-color: #ffff
+}
+
+@media (max-width: 640px) {
+  .grid-container1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 11.75rem);
+    grid-gap: .2rem;
+  }
+
+  .grid-container1 .description,
+  .grid-container1 .unit-central,
+  .grid-container1 .item-main
+  {
+    grid-column: 1/3;
+  }
+
+}
+
+.stats{
+  background: #F4F4F4;
+}
+
+
+.grid-container1 .stats span:nth-child(1) {
+  font-size: 4.5175em;
+  font-family: Tempelhof-Heavy;
+}
+
+.grid-container1 .stats span:nth-child(2)
+ {
+  font-size: 1.2045em;
+  text-align: center;
+  font-family: Tempelhof-Heavy;
+}
+
+.grid-container1 .stats span:nth-child(3)
+ {
+  font-size: 0.803em;
+  text-align: center;
+  font-family: Dobra-Light;
+}
+
+
+img{
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Nueva pagina */
+
+.bg-resumen{
+  background-image: url(../images/el-poder-de-avanzar.jpg);
+}
+
+.bg-resumen, .bg-inspirar, .bg-capacidad,
+.bg-corporativo, .bg-gestion{
+  height: 45rem;
+  width: 100%;
+  background-size: 100% 45rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.des-unidad{
+  background: #003DA6 !important;
+}
+
+.port-resumen {
+  color: #FFA500;
+}
+
+
+.portada .header{
+  display: flex;
+}
+
+.portada .box{
+  width:  6.1765rem;
+  height: 6.121rem;
+  border: solid 2pt #FEA528;
+  margin-left: 21.9375em;
+  margin-top: 5.4435em
+}
+
+@media (max-width: 767px) {
+  .portada .box {
+    margin-left: 10.9375em !important;
+  }
+}
+
+
+.portada h3{
+  color: #FFA500;
+  padding-left: 1.98rem;
+  margin-top: 6.064rem;
+  letter-spacing: .24rem;
+  font-size: 1.2em;
+  font-family: Dobra-Book;
+  width: 12.6em;
+}
+
+.bg-inspirar{
+  background-image: url(../images/inspirar-a-otros.jpg);
+}
+
+.grid-container1{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows:  11.75rem;
+  grid-gap: .2rem;
+  color: #003DA6;
+}
+
+.grid-container2{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows:  11.85rem;
+  grid-gap: .2rem;
+  padding-bottom: 2.5rem;
+}
+
+.bg-capacidad{
+  background-image: url(../images/capacidad-de-equipo.jpg);
+}
+
+.bg-corporativo{
+  background-image: url(../images/poder-generar-valor.jpg);
+}
+
+.bg-gestion{
+  background-image: url(../images/gestion-empresarial.jpg);
+}
+
+.container-unidades {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6em;
+}
+.unidad-main {
+  background-color: #FFB600;
+}
+
+.unidad-main p{
+  font-family: Dobra-Book;
+  font-size: 1.3em;
+  width: 8.45em;
+  letter-spacing: 0.3rem;
+  margin-left: 2.7rem;
+  margin-top: 3.1745rem;
+}
+
+.unidad{
+  width: 29.5em;
+  height: 32em;
+  display: flex;
+  flex-direction: column;
+  color: #003DA6;
+  border: 1pt solid green;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  
+}
+
+a{
+  text-decoration: none;
+  color: #003DA6;
+}
+
+.unidad img{
+  height: 15em;
+  width: 100%;
+  background: yellow;
+}
+
+.body-unidad {
+  margin-bottom: 1.75rem;
+}
+
+.body-unidad p{
+  margin-top: 1.9465em;
+  margin-left: 2.094rem;
+  font-family: Dobra-Book;
+  font-size: 1.3em;
+  letter-spacing: 0.35em;
+  width: 80%;
+  line-height: 1.2rem;
+}
+
+.one-line{
+  margin-bottom: 2.26rem;
+}
+
+.two-line{
+  margin-bottom: 1.06rem;
+}
+
+.cifras {
+  display: flex;
+  margin-left: 2.094rem;
+}
+
+.ventas, .ebitda {
+  display: flex;
+  flex-direction: column;
+  width: 9.65rem;
+}
+
+.ventas span:nth-child(1), .ebitda span:nth-child(1) {
+  font-family: Tempelhof-Heavy;
+  font-size: 3em;
+}
+
+.ventas span:nth-child(2), .ebitda span:nth-child(2) {
+  font-family: Dobra-Light;
+  font-size: 0.85em;
+  letter-spacing: 0.2rem;
+  width: 6.2rem;
+}
+
+hr{
+  height: 0.07rem;
+  width: 27.5rem;
+  margin-left: 1rem;
+  background-color: #003DA6;
+}
+
+/* Slider */
+
+.carouselContainer {
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+.carouselImgs {
+  width: 100%;
+  animation: fade 1.5s;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 49%;
+  cursor: pointer; 
+  font-size: 2em;
+  padding: .7em;
+  font-weight: bolder;
+  color: #6D8AC0;
+  border: solid 2pt #003DA6;
+  border-radius: 50%;
+  height: 0.1rem;
+  width: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev { left: 7rem; }
+.next { right: 7rem; }
+
+.slide2{
+  width: 100%;
+  height: 45em;
+  margin-bottom: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}

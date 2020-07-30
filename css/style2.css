@@ -11,27 +11,27 @@ html {
 
 @font-face{
   font-family: Dobra-Bold;
-  src: url(./fonts/Dobra-Bold.otf);
+  src: url(../fonts/Dobra-Bold.otf);
 }
 
 @font-face{
   font-family: Dobra-Book;
-  src: url(./fonts/Dobra-Book.otf);
+  src: url(../fonts/Dobra-Book.otf);
 }
 
 @font-face{
   font-family: Tempelhof-Heavy;
-  src: url(./fonts/Tempelhof-Heavy.otf);
+  src: url(../fonts/Tempelhof-Heavy.otf);
 }
 
 @font-face{
   font-family: Tempelhof-Medium;
-  src: url(./fonts/Tempelhof-Medium.otf);
+  src: url(../fonts/Tempelhof-Medium.otf);
 }
 
 @font-face{
   font-family: Tempelhof-Regular;
-  src: url(./fonts/Tempelhof-Regular.otf);
+  src: url(../fonts/Tempelhof-Regular.otf);
 }
 
 
@@ -163,8 +163,8 @@ nav ul li a:hover{
   width:  6.1765rem;
   height: 6.121rem;
   border: solid 2pt white;
-  margin-left: 21.9375em;
-  margin-top: 5.4435em
+  margin-left: 21.9375rem;
+  margin-top: 5.4435rem
 }
 
 @media (max-width: 767px) {
@@ -223,7 +223,7 @@ nav ul li a:hover{
   }
 
   .portada .box {
-    margin-left: 10.9375em !important;
+    margin-left: 10.9375rem !important;
   }
 }
 
@@ -238,23 +238,23 @@ nav ul li a:hover{
 }
 
 .bg-unidad-central{
-  background-image: url(./images/unidad-central.png);
+  background-image: url(../images/unidad-central.png);
 }
 
 .bg-habilitacion{
-  background-image: url(./images/habilitacion.png);
+  background-image: url(../images/habilitacion.png);
 }
 
 .bg-hoteles{
-  background-image: url(./images/hoteles.png);
+  background-image: url(../images/hoteles.png);
 }
 
 .bg-departamentos{
-  background-image: url(./images/departamentos.png);
+  background-image: url(../images/departamentos.png);
 }
 
 .bg-estacionamiento{
-  background-image: url(./images/estacionamiento.png);
+  background-image: url(../images/estacionamiento.png);
 }
 
 .bg-unidad-central, .bg-habilitacion, .bg-hoteles,
