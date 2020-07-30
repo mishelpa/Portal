@@ -42,7 +42,13 @@ html {
 
 /* Web Responsive */
 
-@media (max-width: 420px) {
+@media (max-width: 320px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 420px) {
   html {
     font-size: 40%;
   }
@@ -172,6 +178,10 @@ nav ul li a:hover{
   border-bottom-left-radius: 1em;
 }
 
+.box-responsabilidad{
+  margin-left: 56.85em !important;
+}
+
 .portada .box2{
   margin-left: 12.5em;
   border-top-right-radius: 1em;
@@ -189,6 +199,17 @@ nav ul li a:hover{
   }
   .portada .box2, .portada .box3{
     margin-left: 6.25em;
+  }
+
+  .slick-prev{
+    left: 17.4rem !important;
+  }
+  .slick-next{
+    left: 20rem !important;
+  }
+
+  .body-unidad p{
+    line-height: 1.4rem !important;
   }
 }
 
@@ -376,6 +397,9 @@ nav ul li a:hover{
   background: #F4F4F4;
 }
 
+.nodisplay{
+  color: #F4F4F4;
+}
 
 .grid-container1 .stats span:nth-child(1) {
   font-size: 4.5175em;
@@ -491,7 +515,7 @@ img{
 
 .container-unidades {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: inherit;
   margin-bottom: 6em;
 }
 .unidad-main {
@@ -513,10 +537,8 @@ img{
   display: flex;
   flex-direction: column;
   color: #003DA6;
-  border: 1pt solid green;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   cursor: pointer;
-  
 }
 
 a{
@@ -527,7 +549,6 @@ a{
 .unidad img{
   height: 15em;
   width: 100%;
-  background: yellow;
 }
 
 .body-unidad {
@@ -560,7 +581,7 @@ a{
 .ventas, .ebitda {
   display: flex;
   flex-direction: column;
-  width: 9.65rem;
+  width: 12rem;
 }
 
 .ventas span:nth-child(1), .ebitda span:nth-child(1) {
@@ -604,21 +625,26 @@ hr{
   position: absolute;
   top: 49%;
   cursor: pointer; 
-  font-size: 2em;
+  font-size: 1em;
   padding: .7em;
   font-weight: bolder;
-  color: #6D8AC0;
-  border: solid 2pt #003DA6;
-  border-radius: 50%;
-  height: 0.1rem;
-  width: 0.1rem;
+  color: #6D8AC0 !important;
+  background: none !important;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.prev { left: 7rem; }
-.next { right: 7rem; }
+.prev { left: 3rem; }
+.next { right: 3rem; }
+
+@media (max-width: 360px) {
+  .prev { left: 1.5rem; }
+  .next { right: 1.5rem; }
+  .prev, .next{ 
+    padding: .35em;
+  }
+}
 
 .slide2{
   width: 100%;
@@ -631,4 +657,61 @@ hr{
 @keyframes fade {
   from { opacity: 0.4; }
   to { opacity: 1; }
+}
+
+
+.slick-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  width: 66.7%;
+  overflow: hidden;
+}
+.slick-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: .5s ease-in-out;
+}
+.slick{
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+}
+
+
+/* buttons */
+
+.slick-arrow, .prev, .next{
+  border-radius: 30px;
+  background-color: #FFB600;
+  position: absolute;
+  z-index: 4;
+  width: 2.4rem;
+  height: 2.4rem;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  border: 1pt solid #003DA6;
+  cursor: pointer;
+}
+.slick-arrow:focus{
+  outline: 0;
+}
+.slick-arrow svg, .prev svg, .next svg{
+  width: 0.6rem;
+  height: 100%;
+  color: #003DA6;
+}
+.slick-prev{
+  left: 23.4rem;
+  margin-top: 20.825rem;
+}
+.slick-next{
+  left: 26rem;
+  margin-top: 20.825rem;
 }
