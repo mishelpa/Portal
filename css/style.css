@@ -503,6 +503,7 @@ img{
 
 .bg-capacidad{
   background-image: url(../images/capacidad-de-equipo.jpg);
+  background-size: contain;
 }
 
 .bg-corporativo{
@@ -552,7 +553,7 @@ a{
 }
 
 .body-unidad {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .body-unidad p{
@@ -573,7 +574,7 @@ a{
   margin-bottom: 1.06rem;
 }
 
-.cifras {
+.cifras, .destacado {
   display: flex;
   margin-left: 2.094rem;
 }
@@ -581,7 +582,7 @@ a{
 .ventas, .ebitda {
   display: flex;
   flex-direction: column;
-  width: 12rem;
+  width: 24rem;
 }
 
 .ventas span:nth-child(1), .ebitda span:nth-child(1) {
@@ -589,11 +590,10 @@ a{
   font-size: 3em;
 }
 
-.ventas span:nth-child(2), .ebitda span:nth-child(2) {
+.ventas span:nth-child(2), .ebitda span:nth-child(2), .destacado {
   font-family: Dobra-Light;
   font-size: 0.85em;
   letter-spacing: 0.2rem;
-  width: 6.2rem;
 }
 
 hr{
@@ -601,6 +601,7 @@ hr{
   width: 27.5rem;
   margin-left: 1rem;
   background-color: #003DA6;
+  margin-bottom: 1rem;
 }
 
 /* Slider */
