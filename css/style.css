@@ -239,6 +239,7 @@ nav ul li a:hover{
   .toggle{
     display: block;
     padding: .2rem;
+    padding-right: 2em;
     margin-top: -9rem;
     color: #0061A2;
     font-size: 1em;
@@ -303,6 +304,7 @@ nav ul li a:hover{
   .ventas span:nth-child(2), .ebitda span:nth-child(2) {
     font-size: 1.18em !important;
   }
+
 
 
 }
@@ -393,6 +395,7 @@ nav ul li a:hover{
 
 .title-results{
   font-size:2em;
+  padding: 0 1em;
 }
 
 .title-results :nth-child(1){
@@ -789,3 +792,16 @@ hr{
   left: 26rem;
   margin-top: 20.825rem;
 }
+
+@media (max-width: 767px){
+  .bg-resumen, .bg-inspirar, .bg-capacidad,
+  .bg-corporativo, .bg-gestion{
+  height: 40rem;
+  }
+
+  .portada .body p {
+    line-height: 4rem !important;
+  }
+
+}
+

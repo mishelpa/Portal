@@ -225,6 +225,15 @@ nav ul li a:hover{
   .portada .box {
     margin-left: 10.9375rem !important;
   }
+
+  .bg-unidad-central, .bg-habilitacion, .bg-hoteles,
+  .bg-departamentos, .bg-estacionamiento{
+  height: 40rem;
+  width: 100%;
+  background-size: 100% 45rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 }
 
 
