@@ -173,13 +173,14 @@ nav ul li a:hover{
     display: block;
     padding: .2rem;
     margin-top: -9rem;
+    padding-right: 2em;
     color: #0061A2;
     font-size: 1em;
     cursor: pointer;
   }
 
   .act-toggle{
-    height: 18rem;
+    height: 25rem;
   }
 
   .pad-toggle{
@@ -187,7 +188,7 @@ nav ul li a:hover{
   }
 
   .toggle span {
-    padding: 0.1em;
+    padding: 0.5em;
     font-size: 2em;
     border: #0061A2 1.5pt solid;
   }
@@ -198,7 +199,7 @@ nav ul li a:hover{
   }
 
   .container{
-    height: 18rem;
+    height: 25rem;
   }
 
   nav{
@@ -219,21 +220,11 @@ nav ul li a:hover{
     display: block;
     text-align: center;
     padding: .4rem;
-    font-size: 1em;
   }
 
-  .portada .box {
-    margin-left: 10.9375rem !important;
+  nav ul li a{
+    font-size: 2em;
   }
-
-  .bg-unidad-central, .bg-habilitacion, .bg-hoteles,
-  .bg-departamentos, .bg-estacionamiento{
-  height: 40rem;
-  width: 100%;
-  background-size: 100% 45rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 }
 
 
@@ -270,7 +261,7 @@ nav ul li a:hover{
 .bg-departamentos, .bg-estacionamiento{
   height: 45rem;
   width: 100%;
-  background-size: 100% 45rem;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -692,4 +683,55 @@ img{
   height: 90%;
 }
 
+@media (max-width: 768px) {
 
+  .item-main div :nth-child(1) {
+    letter-spacing: 0.38em;
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 1.2rem;
+  }
+  
+  .item-main div :nth-child(2) {
+    font-size: 2em;
+    line-height: 2.2rem;
+  }
+
+  .title-results{
+    font-size:2em;
+    padding: 0 1em;
+  }
+
+  .row-container1, .row-container2 {
+    width: 80%;
+  }
+
+
+
+  .grid-container1 .description{
+    font-size: 1.7em;
+  }
+
+  .grid-container1 .description p{
+    margin: 2.35rem 2rem;
+  }
+
+  .grid-container2 .description p{
+    margin: 1rem 1rem;
+  }
+
+  .grid-container1 .stats span:nth-child(2), .grid-container2 .stats span:nth-child(2) {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 620px) {
+  .bg-unidad-central, .bg-habilitacion, .bg-hoteles,
+  .bg-departamentos, .bg-estacionamiento{
+  height: 100%
+}
+
+.portada .body p {
+  line-height: 4rem !important;
+}
+}
