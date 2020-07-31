@@ -174,7 +174,7 @@ nav ul li a:hover{
   .toggle{
     display: block;
     padding: .2rem;
-    margin-top: -9rem;
+    margin-top: -10rem;
     padding-right: 2em;
     color: #0061A2;
     font-size: 1em;
@@ -193,6 +193,12 @@ nav ul li a:hover{
     padding: 0.5em;
     font-size: 2em;
     border: #0061A2 1.5pt solid;
+  }
+
+  .logo{
+    width: 14.306em;
+    height: 5.768em;
+    margin-left: 7em;
   }
 
   header{
@@ -226,6 +232,7 @@ nav ul li a:hover{
 
   nav ul li a{
     font-size: 2em;
+    color: #0061A2;
   }
 }
 

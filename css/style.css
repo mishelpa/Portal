@@ -151,7 +151,7 @@ nav ul li{
 }
 
 nav ul li a{
-  color: blue;
+  color: #0061A2;
   font-size: 0.75em;
   font-family: Dobra-Book;
   text-decoration: none;
@@ -203,26 +203,6 @@ nav ul li a:hover{
   border-top-right-radius: 1em;
 }
 
-@media (max-width: 767px){
-  .portada .box1{
-    margin-left: 24.42em !important;
-  }
-  .portada .box2, .portada .box3{
-    margin-left: 6.25em;
-  }
-
-  .slick-prev{
-    left: 17.4rem !important;
-  }
-  .slick-next{
-    left: 20rem !important;
-  }
-
-  .body-unidad p{
-    line-height: 1.4rem !important;
-  }
-}
-
 .portada .box1 p, .portada .box2 p, .portada .box3 p{
   font-size: 2.1em;
   line-height: 1.2em;
@@ -250,7 +230,7 @@ nav ul li a:hover{
     display: block;
     padding: .2rem;
     padding-right: 2em;
-    margin-top: -9rem;
+    margin-top: -10rem;
     color: #0061A2;
     font-size: 1em;
     cursor: pointer;
@@ -301,6 +281,7 @@ nav ul li a:hover{
 
   nav ul li a{
     font-size: 2em;
+    color: #0061A2;
   }
 
   .portada .box {
@@ -811,8 +792,7 @@ hr{
     line-height: 4rem !important;
   }
 
-
-  .portada .box1, .portada .box2{
+   .portada .box1, .portada .box2{
     width: 26.2rem;
     height: 15.4615rem;
   }
@@ -827,9 +807,45 @@ hr{
     margin-top: -2.5em;
   }
 
+}
+
+@media (max-width: 767px){
+  .logo{
+    width: 14.306em;
+    height: 5.768em;
+    margin-left: 7em;
+  }
+
+  .portada .box1{
+    margin-left: 24.42em !important;
+  }
+  .portada .box2, .portada .box3{
+    margin-left: 6.25em;
+  }
+
+  .slick-prev{
+    left: 7rem !important;
+  }
+  .slick-next{
+    left: 16rem !important;
+  }
+
   .portada .box3{
     width: 26.2rem;
   }
 
-}
+  .slick-arrow, .prev, .next{
+    width: 8rem;
+    height: 8rem;
+  }
 
+  .slick-arrow svg, .prev svg, .next svg{
+    width: 2rem;
+    height: 100%;
+    color: #003DA6;
+  }
+
+  .body-unidad p{
+    line-height: 1.4rem !important;
+  }
+}
