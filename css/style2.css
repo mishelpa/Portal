@@ -109,7 +109,7 @@ header{
 
 .logo{
   width: 9.306em;
-  height: 2.768em;
+  height: auto;
   float:left;
   margin-left: 5em;
   margin-top: 2em;
@@ -197,7 +197,7 @@ nav ul li a:hover{
 
   .logo{
     width: 14.306em;
-    height: 5.768em;
+    height: auto;
     margin-left: 7em;
   }
 

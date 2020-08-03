@@ -13,15 +13,26 @@ jQuery(document).ready(function() {
 
 // Carrusel
 
+document.getElementById('prev').style.display = 'none';
+
 let currentSlide = 1;
 const showSlide = (slideIndex) => {
   const slides = document.getElementsByClassName('carouselImgs');
-  if (slideIndex > slides.length) { currentSlide = 1 }
+  if (slideIndex > slides.length) { 
+    currentSlide = 1; }
   if (slideIndex < 1) { currentSlide = slides.length }
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none'
+    slides[i].style.display = 'none';
   }
   slides[currentSlide - 1].style.display = 'flex'
+  console.log(currentSlide);
+  if (currentSlide === 1 ) {
+    document.getElementById('prev').style.display = 'none';
+    document.getElementById('next').style.display = 'block';
+  } else {
+    document.getElementById('prev').style.display = 'block';
+    document.getElementById('next').style.display = 'none';
+  }
 }
 
 const previousSlide = () => {
@@ -48,8 +59,7 @@ window.onload = () => {
     const slickList = document.getElementById('slick-list');
     const slick = document.querySelectorAll('.slick');
 
-    const slickWidth = slick[0].offsetWidth;
-
+    const slickWidth = slick[0].offsetWidth * 1.04;
     buttonPrev.onclick = () => Move(1);
     buttonNext.onclick = () => Move(2);
 
