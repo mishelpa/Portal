@@ -201,6 +201,7 @@ nav ul li a:hover{
   margin-left: 12.5em;
   height: 19.9615em !important;
   border-top-right-radius: 1em;
+  width: 29.7rem;
 }
 
 .portada .box1 p, .portada .box2 p, .portada .box3 p{
@@ -209,7 +210,7 @@ nav ul li a:hover{
   font-family: Dobra-Bold;
   color: #FFB600;
   width: 80%;
-  text-align: justify;
+  text-align: start;
 }
 
 .bg-capacidad, .bg-corporativo{
@@ -514,10 +515,9 @@ img{
   background: #003DA6 !important;
 }
 
-.port-resumen {
-  color: #FFA500;
+.port-resumen, .title-resumen {
+  color: #fbad32 !important;
 }
-
 
 .portada .header{
   display: flex;
@@ -848,4 +848,8 @@ hr{
   .body-unidad p{
     line-height: 1.4rem !important;
   }
+}
+
+.results-resumen .body-item p{
+  color: #fbad32 !important;
 }

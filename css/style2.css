@@ -391,7 +391,7 @@ nav ul li a:hover{
   line-height: 1rem;
 }
 .grid-container1 .item-main{
-  grid-column: 2/4;
+  grid-column: 3/5;
   background-color: #ffff
 }
 
@@ -590,7 +590,7 @@ nav ul li a:hover{
 }
 
 .grid-container2 .item-departamentos{
-  grid-column: 2/6;
+  grid-column: 4/7;
 }
 
 .grid-container2 .item8,
