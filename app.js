@@ -43,7 +43,7 @@ const nextSlide = () => {
   showSlide(currentSlide += 1);
 }
 
-window.onload = () => {
+/* window.onload = () => {
   showSlide(currentSlide);
   document.getElementById('prev').addEventListener('click', () => {
     previousSlide();
@@ -51,9 +51,9 @@ window.onload = () => {
   document.getElementById('next').addEventListener('click', () => {
     nextSlide();
   })
-}
+} */
 
-    const buttonPrev = document.getElementById('button-prev');
+    /* const buttonPrev = document.getElementById('button-prev');
     const buttonNext = document.getElementById('button-next');
     const track = document.getElementById('track');
     const slickList = document.getElementById('slick-list');
@@ -77,4 +77,44 @@ window.onload = () => {
         } else if(leftPosition >= 0 && value == 1) {
             track.style.left = `${-1 * (leftPosition - slickWidth)}px`;
         }
-    }
+    } */
+
+let currentUnit = 1;
+const showUnit = (indexUnit) => {
+  const allUnit = document.getElementsByClassName('slick');
+  if (indexUnit > allUnit.length) { 
+    currentUnit = 1; }
+  if (indexUnit < 1) { currentUnit = allUnit.length }
+  for (let i = 0; i < allUnit.length; i++) {
+    allUnit[i].style.display = 'none';
+  }
+  allUnit[currentUnit - 1].style.display = 'flex'
+  allUnit[currentUnit].style.display = 'flex'
+}
+
+const previousUnit = () => {
+  showUnit(currentUnit -= 1);
+}
+
+const nextUnit = () => {
+  showUnit(currentUnit += 1);
+}
+
+window.onload = () => {
+
+  showSlide(currentSlide);
+  document.getElementById('prev').addEventListener('click', () => {
+    previousSlide();
+  })
+  document.getElementById('next').addEventListener('click', () => {
+    nextSlide();
+  })
+
+  showUnit(currentUnit);
+  document.getElementById('button-prev').addEventListener('click', () => {
+    previousUnit();
+  })
+  document.getElementById('button-next').addEventListener('click', () => {
+    nextUnit();
+  })
+}

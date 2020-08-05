@@ -78,7 +78,7 @@ html {
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1399px) {
+/* @media (min-width: 1201px) and (max-width: 1399px) {
   html {
     font-size: 90%;
   }
@@ -88,7 +88,7 @@ html {
   html {
     font-size: 125%;
   }
-}
+} */
 
 @media (max-width: 640px) {
   .portada .body p, .box1 p, .box2 p{
@@ -289,9 +289,6 @@ nav ul li a:hover{
     margin-left: 10.9375em !important;
   }
 
-  .destacado{
-    font-size: 1.8em !important;
-  }
 
   .ventas span:nth-child(2), .ebitda span:nth-child(2) {
     font-size: 1.18em !important;
@@ -310,7 +307,7 @@ nav ul li a:hover{
 .portada .body p{
   font-size: 7em;
   letter-spacing: 0.3rem;
-  width: 40%;
+  width: 50%;
   font-family: Dobra-Bold;
   line-height: 6rem;
   margin-left: 0.2rem;
@@ -318,7 +315,7 @@ nav ul li a:hover{
 
 @media (max-width: 640px) {
   .portada .body p{
-    font-size: 3.5em;
+    font-size: 4em;
   }
 }
 
@@ -511,6 +508,13 @@ img{
   background-position: center center;
 }
 
+@media (min-width: 1201px) {
+  .bg-resumen, .bg-inspirar, .bg-capacidad,
+.bg-corporativo, .bg-gestion{
+  height: 35em;
+}
+}
+
 .des-unidad{
   background: #003DA6 !important;
 }
@@ -614,7 +618,7 @@ a{
 }
 
 .unidad img{
-  height: 15em;
+  height: auto;
   width: 100%;
 }
 
@@ -640,7 +644,7 @@ a{
   margin-bottom: 1.06rem;
 }
 
-.cifras, .destacado {
+.cifras {
   display: flex;
   margin-left: 2.094rem;
 }
@@ -656,7 +660,7 @@ a{
   font-size: 3em;
 }
 
-.ventas span:nth-child(2), .ebitda span:nth-child(2), .destacado {
+.ventas span:nth-child(2), .ebitda span:nth-child(2) {
   font-family: Dobra-Light;
   font-size: 0.85em;
   letter-spacing: 0.2rem;
