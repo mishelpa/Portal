@@ -88,8 +88,14 @@ const showUnit = (indexUnit) => {
   for (let i = 0; i < allUnit.length; i++) {
     allUnit[i].style.display = 'none';
   }
-  allUnit[currentUnit - 1].style.display = 'flex'
-  allUnit[currentUnit].style.display = 'flex'
+  
+  if (currentUnit < 5) {
+    allUnit[currentUnit - 1].style.display = 'flex'
+    allUnit[currentUnit].style.display = 'flex'
+  } 
+  if (currentUnit === 5) {
+    allUnit[currentUnit-1].style.display = 'flex'
+  }
 }
 
 const previousUnit = () => {
