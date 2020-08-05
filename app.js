@@ -95,6 +95,8 @@ const showUnit = (indexUnit) => {
   } 
   if (currentUnit === 5) {
     allUnit[currentUnit-1].style.display = 'flex'
+    allUnit[0].style.display = 'flex'
+    allUnit[4].insertBefore(allUnit[0])
   }
 }
 
