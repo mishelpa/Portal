@@ -333,6 +333,7 @@ nav ul li a:hover{
 .grids-results{
   display: flex;
   justify-content: center;
+  margin-bottom: 7rem;
 }
 
 .row-container1, .row-container2{
@@ -399,7 +400,7 @@ nav ul li a:hover{
 
 .item-main div :nth-child(2) {
   font-family: Tempelhof-Medium;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1rem;
 }
 .grid-container1 .item-main{
@@ -583,9 +584,13 @@ nav ul li a:hover{
   background: #926B27;
 }
 
-.results-hoteles .info{
+.results-hoteles .cuadro{
   color: #946B27;
   height: 100% !important;
+}
+
+.results-hoteles .info{
+  color: #946B27;
 }
 
 .grid-container2 .item2,
@@ -667,6 +672,10 @@ nav ul li a:hover{
 .grid-container2 .item11{
   grid-row: 8/9;
 }
+
+.cuadro{
+  height: 19.65rem !important;
+}
 }
 
 .p-geo {
@@ -687,6 +696,7 @@ nav ul li a:hover{
 @media (max-width: 640px) {
   .info {
     grid-column: 1/3;
+    height: 20rem !important;
   }
   .p-geo {
     grid-row: 6/7;
@@ -711,6 +721,10 @@ img{
     width: 100%;
     font-size: 2em;
     margin-bottom: 1.2rem;
+  }
+
+  .cuadro img {
+    height: 100% !important;
   }
   
   .item-main div :nth-child(2) {
