@@ -615,7 +615,7 @@ img{
 }
 
 .difuminado{
-  filter: blur(0.25em);
+  opacity: 0.3;
 }
 
 a{
@@ -848,8 +848,5 @@ hr{
     color: #003DA6;
   }
 
-  .body-unidad p{
-    line-height: 1.4rem !important;
-  }
 }
 
