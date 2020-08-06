@@ -519,7 +519,7 @@ img{
   background: #003DA6 !important;
 }
 
-.port-resumen, .title-resumen {
+.port-resumen {
   color: #fbad32 !important;
 }
 
@@ -530,7 +530,7 @@ img{
 .portada .box{
   width:  6.1765rem;
   height: 6.121rem;
-  border: solid 2pt #FEA528;
+  border: solid 2pt #fbad32;
   margin-left: 21.9375em;
   margin-top: 5.4435em
 }
@@ -543,7 +543,7 @@ img{
 
 
 .portada h3{
-  color: #FFA500;
+  color: #fbad32;
   padding-left: 1.98rem;
   margin-top: 6.064rem;
   letter-spacing: .24rem;
@@ -854,6 +854,3 @@ hr{
   }
 }
 
-.results-resumen .body-item p{
-  color: #fbad32 !important;
-}
