@@ -531,6 +531,8 @@ img{
   width:  6.1765rem;
   height: 6.121rem;
   border: solid 2pt #fbad32;
+  border-top-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   margin-left: 21.9375em;
   margin-top: 5.4435em
 }
@@ -612,6 +614,10 @@ img{
   cursor: pointer;
 }
 
+.difuminado{
+  filter: blur(0.25em);
+}
+
 a{
   text-decoration: none;
   color: #003DA6;
@@ -627,21 +633,13 @@ a{
 }
 
 .body-unidad p{
-  margin-top: 1.9465em;
+  margin-top: 1em;
   margin-left: 2.094rem;
   font-family: Dobra-Book;
   font-size: 1.3em;
   letter-spacing: 0.35em;
   width: 80%;
-  line-height: 1.2rem;
-}
-
-.one-line{
-  margin-bottom: 2.26rem;
-}
-
-.two-line{
-  margin-bottom: 1.06rem;
+  height: 4em;
 }
 
 .cifras {
@@ -672,6 +670,7 @@ hr{
   margin-left: 1rem;
   background-color: #003DA6;
   margin-bottom: 1rem;
+  border: 0.005rem solid;
 }
 
 /* Slider */

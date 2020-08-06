@@ -167,6 +167,8 @@ nav ul li a:hover{
   border: solid 2pt white;
   margin-left: 23%;
   margin-top: 5%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 @media (max-width: 767px) {

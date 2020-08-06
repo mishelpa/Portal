@@ -87,17 +87,20 @@ const showUnit = (indexUnit) => {
   if (indexUnit < 1) { currentUnit = allUnit.length }
   for (let i = 0; i < allUnit.length; i++) {
     allUnit[i].style.display = 'none';
+    allUnit[i].classList.add('difuminado');
   }
   
-  if (currentUnit < 5) {
-    allUnit[currentUnit - 1].style.display = 'flex'
-    allUnit[currentUnit].style.display = 'flex'
+  if (currentUnit < 6) {
+    allUnit[currentUnit - 1].style.display = 'flex';
+    allUnit[currentUnit-1].classList.remove('difuminado');
+    allUnit[currentUnit].style.display = 'flex';
   } 
-  if (currentUnit === 5) {
-    allUnit[currentUnit-1].style.display = 'flex'
+  if (currentUnit === 6) {
     allUnit[0].style.display = 'flex'
-    allUnit[4].insertBefore(allUnit[0])
+    allUnit[1].style.display = 'flex'
+    allUnit[0].classList.remove('difuminado');
   }
+
 }
 
 const previousUnit = () => {
